@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Latest Movies</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="script.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- HERO SECTION START -->
+      <div class="container px-4 py-5 hero-section">
+        <div class="row align-items-center g-5 py-5">
+          <div class="col-lg-6">
+            <div class="lc-block mb-3">
+              <div editable="rich">
+                <h2 class="fw-bold display-5">Latest movies at cheap rates!</h2>
+              </div>
+            </div>
+
+            <div class="lc-block mb-3">
+              <div editable="rich">
+                <p class="lead">
+                  Quickly design and customize responsive mobile-first sites
+                  with Bootstrap, the world’s most popular front-end open source
+                  toolkit, featuring Sass variables and mixins, responsive grid
+                  system, extensive prebuilt components, and powerful JavaScript
+                  plugins.
+                </p>
+              </div>
+            </div>
+
+            <div
+              class="lc-block d-grid gap-2 d-md-flex justify-content-md-start"
+            >
+              <a class="btn btn-warning px-4 me-md-2" href="#" role="button"
+                >Go to Store</a
+              >
+              <a class="btn btn-outline-secondary px-4" href="#" role="button"
+                >Explore Movies</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- HERO SECTION END -->
+
+      <!-- MOVIES LIST START -->
+
+      <div class="container movies-list-wrapper">
+        <h2 class="mb-4 text-bg-warning text-center py-4">Latest Movies</h2>
+        <div class="filters-wrapper py-4">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="d-flex">
+                <select class="form-select" id="movies-sort" >
+                  <option value="-1">Sort</option>
+                  <option value="name-asc">Name (A-Z) | Ascending</option>
+                  <option value="name-desc">Name (Z-A) | Descending</option>
+                  <option value="rating">Rating</option>
+                  <option>Year Released</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <select class="form-select" id="genres-filter">
+                <option value="-1">Select Genre</option>
+                <option value="2">Action</option>
+                <option>Sci-Fi</option>
+                <option>Comedy</option>
+                <option>Drama</option>
+                <option>Crime Thriller</option>
+                <option>Animated</option>
+              </select>
+            </div>
+            <div class="col-md-4">
+              <select class="form-select">
+                <option>Select Industry</option>
+                <option>Hollywood</option>
+                <option>Bollywood</option>
+                <option>English</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <!-- ITEMS TO BE APPENDED HERE -->
+        <div class="row" id="movies-list-row"></div>
+      </div>
+      <!-- MOVIES LIST END -->
+    </div>
+  </body>
+</html>

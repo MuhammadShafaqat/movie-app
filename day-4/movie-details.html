@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Buy Latest Movies</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="js/bootstrap.min.js" defer></script>
+    <script src="detail-page.js" type="module" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- MOVIES DETAILS START -->
+
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="movie-item shadow p-3 mb-5 bg-body-tertiary rounded">
+              <img
+                src="https://www.vita-romae.com/images/gladiator-movie.jpg"
+                class="img-fluid"
+                alt="movie 1"
+                id="movie-thumbnail"
+              />
+            </div>
+          </div>
+          <div class="col-md-8">
+            <div class="details-wrapper">
+              <h1><span id="movie-title-main">Gladiator</span> <span id="release-year">(2002)</span></h1>
+              <p>Cast: Russel Crowe, Joaquin Phoenix</p>
+              <p><b>Imdb Rating: 9.1/10</b></p>
+
+              <p class="badge text-bg-dark">Available in: 1080p</p>
+
+              <h4>Price: 2500/- PKR</h4>
+
+              <div class="d-flex gap-2">
+                <button class="btn btn-warning d-block">Add to Cart</button>
+                <button class="btn btn-success d-block">Buy Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container trailer">
+        <hr />
+        <div class="row gutter-2">
+          <div class="col-md-6">
+            <h4 class="mb-4">Watch Trailer:</h4>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/owK1qxDselE"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+          <div class="col-md-6">
+            <h4 class="mb-4">Movie Plot:</h4>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga,
+              excepturi porro? Molestiae repudiandae natus doloribus eveniet
+              enim facere, incidunt repellendus pariatur qui iste nemo quis? Vel
+              earum laborum repellat cum.
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officia
+              fuga accusantium aliquid mollitia sequi corrupti laudantium
+              maxime, rerum veniam velit excepturi facere nulla dicta
+              necessitatibus earum corporis omnis ipsa veritatis
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo,
+              dolorem doloribus ipsum magni obcaecati culpa maxime vero
+              voluptatem maiores corrupti pariatur praesentium consequuntur
+              minus dolores! Praesentium alias dicta amet facilis?
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- MOVIES DETAILS END -->
+
+      <div class="container">
+        <hr />
+        <h3 class="text-center">Related Movies</h3>
+        <div class="row">
+          <div class="col-md-3">
+            <div class="movie-item shadow p-3 mb-5 bg-body-tertiary rounded">
+              <a
+                href="https://www.youtube.com/watch?v=owK1qxDselE"
+                target="_blank"
+              >
+                <img
+                  src="https://www.vita-romae.com/images/gladiator-movie.jpg"
+                  class="img-fluid"
+                  alt="movie 1"
+                />
+              </a>
+              <h4>Gladiator</h4>
+              <small>2002</small> <br />
+              <small>Rating: 9.1</small>
+              <button class="btn btn-success d-block mt-2">Buy Now</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="movie-item shadow p-3 mb-5 bg-body-tertiary rounded">
+              <a
+                href="https://www.youtube.com/watch?v=owK1qxDselE"
+                target="_blank"
+              >
+                <img
+                  src="https://www.vita-romae.com/images/gladiator-movie.jpg"
+                  class="img-fluid"
+                  alt="movie 1"
+                />
+              </a>
+              <h4>Gladiator</h4>
+              <small>2002</small> <br />
+              <small>Rating: 9.1</small>
+              <button class="btn btn-success d-block mt-2">Buy Now</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="movie-item shadow p-3 mb-5 bg-body-tertiary rounded">
+              <img
+                src="https://www.vita-romae.com/images/gladiator-movie.jpg"
+                class="img-fluid"
+                alt="movie 1"
+              />
+              <h4>Gladiator</h4>
+              <small>2002</small> <br />
+              <small>Rating: 9.1</small>
+              <button class="btn btn-success d-block mt-2">Buy Now</button>
+            </div>
+          </div>
+          <div class="col-md-3">
+            <div class="movie-item shadow p-3 mb-5 bg-body-tertiary rounded">
+              <a
+                href="https://www.youtube.com/watch?v=owK1qxDselE"
+                target="_blank"
+              >
+                <img
+                  src="https://www.vita-romae.com/images/gladiator-movie.jpg"
+                  class="img-fluid"
+                  alt="movie 1"
+                />
+              </a>
+              <h4>Gladiator</h4>
+              <small>2002</small> <br />
+              <small>Rating: 9.1</small>
+              <button class="btn btn-success d-block mt-2">Buy Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
